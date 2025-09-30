@@ -5,7 +5,7 @@ export default function Button({
   onClick = () => {},
 }) {
   return (
-    <button type={type} className={className} onClick={() => onClick()}>
+    <button type={type} className={className} onClick={onClick}>
       {children}
     </button>
   );

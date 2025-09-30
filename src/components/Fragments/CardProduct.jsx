@@ -35,11 +35,14 @@ const Body = ({ title, children }) => {
   );
 };
 
-const Footer = ({ price }) => {
+const Footer = ({ id, price, handlerAddToChart }) => {
   return (
     <div className="flex justify-between items-center px-5 pb-4">
       <span className="text-xl font-bold text-white">Rp. {price}</span>
-      <Button className="bg-blue-600 font-semibold text-white px-2 py-1 rounded-md">
+      <Button
+        className="bg-blue-600 font-semibold text-white px-2 py-1 rounded-md"
+        onClick={() => handlerAddToChart(id)}
+      >
         Add To Cart
       </Button>
     </div>
