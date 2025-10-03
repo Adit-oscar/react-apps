@@ -2,7 +2,7 @@ import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css"; // import styling global (opsional)
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 import ErrorPage from "./pages/404";
 import Auth from "./pages/auth";
 import ProductsPage from "./pages/products";
