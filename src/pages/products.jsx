@@ -6,6 +6,14 @@ export default function ProductsPage() {
   const [products, setProducts] = useState([]);
   const [chart, setChart] = useState([]);
 
+  const token = localStorage.getItem("token");
+
+  useEffect(() => {
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }, [token]);
+
   useEffect(() => {
     getProducts((data) => {
       setProducts(data);
